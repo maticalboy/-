@@ -1,0 +1,782 @@
+/* .fix::after,.fix::before{
+    content:"" ;
+    display: table;
+    clear: both;
+} */
+.title{
+    /* 页面伸缩 */
+    min-width: 1543px;
+    height: 50px;
+    background-color: #333333;
+}
+.title_middle{
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+/* 设置头部导航链接   */
+.title_middle a{
+    /* 设置为块元素，方便点击 */
+    display: block;
+    text-decoration: none;
+    font: 12px 微软雅黑;
+    color: #919597;
+    padding: 17px 0px;
+}
+.title_middle_left{
+    float: left;
+}
+.title_middle_right{
+    float: right;
+}
+.title_middle li{
+    /* padding: 15px 0; */
+    float: left;
+    /* background-color: aqua; */
+}
+/* 设置购物车和字体的距离 */
+.title_middle_right .car i{
+    margin-left:6px ;
+}
+/* 设置购物车的做外边距 */
+.title_middle_right .car{
+    margin-left:16px;
+}
+/* 设置二维码的箭头 */
+.erweima:hover::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-color: transparent transparent white transparent ;
+    border-top: none;
+    position: relative;
+    top: -8px;
+    left: 16px;
+}
+/* 设置二维码框的大小 */
+.title_middle .erweima .erwei{
+    width: 120px;
+    height: 0px;
+    overflow: hidden;
+    /* height: 150px; */
+    background-color:white;
+    position: absolute;
+    top: 50px;
+    left: 755px;
+    text-align: center;
+    /* display: none; */
+    transition: height 0.4s;
+}
+/* 设置二维码的居中 */
+.title_middle .erweima .erwei img{
+    width: 80px;
+    height: 80px;
+    margin: 12px 20px;
+}
+/* 设置二维码中的字体 */
+.title_middle .erweima .erwei span{
+    font-size: 14px;
+    color: black;
+}
+/* 显示二维码下拉框 */
+.title_middle .erweima:hover .erwei{
+    /* display: block; */
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+/* 点击时改变背景颜色 */
+ /* .title_middle li:not(.line_middle):hover{ 
+    background-image: radial-gradient(yellow,red);
+    background-clip: content-box;
+} */
+/* 点击时字体 */
+.title_middle li:hover a{
+    color: white;
+}
+/* 导航分割线 */
+.title_middle .line_middle{
+    /* display: inline-block;
+    border-right: 2px #82138f solid; */
+    margin: 0 8px;
+    background-color: #333333;
+}
+/* 购物车下拉框 */
+.title_middle_right .car .gouwu_list{
+    width: 220px;
+    height: 150px;
+    background-color:white;
+    display: none;
+    position: absolute;
+    right: 168px;
+    top: 50px;
+}
+/* 点击时购物车显示 */
+.car:hover .gouwu_list{
+    display: block;
+    border: 1px solid rgba(205,205,205, 0.3);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+/* 导航结束 */
+/* 第二块 */
+.second_top{
+     /* 页面伸缩 */
+    min-width: 1525px;
+    /* width: 1200px; */
+    height: 70px;
+    
+    padding: 50px 0 25px 0px;
+    margin: 0 auto;
+    /* background-color: orange; */
+} 
+.second_top .log{
+    height: 70px;
+    width: 70px;
+    border: 1px transparent solid;
+    border-radius: 35%;
+    background-color:#ff6a00 ;
+    text-align: center;
+    font: 25px bold 微软雅黑;
+    margin-left: 150px;
+    line-height: 70px;
+    float: left;
+    margin-right: 150px;
+}
+.log a{
+    text-decoration: none;
+    color: white;
+}
+.second_top .xinpin{
+    float: left;
+}
+.second_top .xinpin>li{
+    float: left;
+    line-height: 70px;
+}
+.second_top .xinpin .xiaomi>a{
+    margin-right:25px ;
+    text-decoration: none;
+    font: 15px 微软雅黑;
+    color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+}
+/* 输入框 */
+.second_top .search input{
+    line-height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    margin:12px 0 12px 0px;
+    border-right:none ;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.second_top .search{
+    font-size: 0;
+    float: right;
+    margin-right: 50px;
+}
+.second_top .search button{
+    /* border: 1px rgb(0, 0, 0) solid; */
+    margin-top: 12px;
+    padding: 5px 6px;
+    width: 40px;
+    height: 44px;
+    vertical-align: top;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.second_top .search button:hover{
+    background-image: radial-gradient(red,yellow);
+}
+/* .xinpin .xiaomi{
+     background-color: chartreuse; 
+} */
+.xinpin .xiaomi:hover a{
+    display: inline-block;
+    color: orange;
+    
+}
+.xinpin .xiaomi .xiaomi_list{
+    width: 1800px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 175px;
+    display: none;
+    padding:20px 182px;
+    z-index: 3;
+}
+.xinpin .xiaomi:hover .xiaomi_list{
+    display: block;
+    /* background-color: orangered; */
+    border: 1px solid black;
+}
+.xiaomi_list .img{
+    width: 200px;
+    height: 150px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+    /* background-color: #ff6a00; */
+}
+.img img{
+    display: inline-block;
+    vertical-align:middle;
+}
+.xiaomi_list li{
+    float: left;
+}
+.wenzi{
+    width: 200px;
+    height: 75px;
+    /* background-color: palegoldenrod; */
+    text-align: center;
+    line-height: 100px;
+    display: table;
+    
+}
+.wenzi i{
+    display: table-cell;
+    line-height: 18px;
+    vertical-align: middle;
+}
+.xiaomi_list .line{
+    width: 3px;
+    height: 130px;
+    background-color: rgba(205,205,205, 0.3);
+    /* border: 1px solid rgba(205,205,205, 0.3); */
+    float: right;
+    margin: 0 0px 0 0px;
+}
+.xinpin .xiaomi:hover a{
+    display: inline-block;
+    color: orange;
+    text-decoration: none;
+    
+}
+/* .xinpin .hongmi .hongmi_list{
+    width: 1800px;
+    height: 200px;
+    background-color: rgb(148, 19, 19);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 175px;
+    display: none;
+    padding:20px 182px;
+} */
+/* .dianshi:hover .wenzi{
+    width: 175px;
+    height: 100px;
+    background-color: palegoldenrod;
+    text-align: center;
+    line-height: 100px;
+} */
+/* .dianshi:hover .line{
+    width: 3px;
+    height: 130px;
+    background-color: rgba(205,205,205, 0.3);
+    border: 1px solid rgba(205,205,205, 0.3);
+    float: right;
+    margin: 0 25px 0 0px;
+} */
+/* 左侧搜索 */
+.leftClass{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(79, 82, 79);
+    padding: 10px 0 10px 0;
+    position: relative;
+    left: 150px;
+    z-index: 1;
+}
+/* 一行 */
+.leftClass>ul>li{
+    width: 200px;
+    /* padding:10px 25px 10px 15px; */
+    /* background-color: #16668f; */
+}
+/* 行内内容 */
+.leftClass>ul>li>span{
+    display: inline-block;
+    /* text-align: center; */
+    padding:10px 100px 10px 15px;
+    color: oldlace;
+    /* background-color: #919597; */
+}
+/* 隐藏框 */
+.phoneall{
+    /* display: inline-block; */
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 200px;
+    width: 1010px;
+    height: 420px;
+    background-color: #eee9e5;
+}
+.leftClass>ul>li:hover .phoneall{
+    display: block;
+
+}
+.leftClass>ul>li:hover{
+    background-color: orange;
+
+}
+/* 隐藏矿的具体信息 */
+.phoneall>ul>li{
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+}
+/* 内容 */
+.phoneall>ul>li span{
+    display:table-cell;
+    padding: 5px 0 5px 5px;
+    /* background-color:#ff6a00; */
+    vertical-align: middle;
+}
+/* 图片 */
+.phoneall>ul>li img{
+    width: 40px;
+    height: 50px;
+}
+/* 字体样式 */
+.leftClass>ul a{
+    color: #0e0d0d;
+    display: table;
+    text-decoration: none;
+}
+/* 轮播图 显示的大小*/
+.pics{
+    width: 1010px;
+    height: 420px;
+    background-color: burlywood;
+    position: absolute;
+    top: 195px;
+    left: 350px;
+    overflow: hidden;
+    /* z-index: 3; */
+}
+/* 存放的空间 */
+.pics>ul{
+    width: 3030px;
+    height: 420px;
+    position: absolute;
+    background-color: #ff6a00;
+    /* left: -2020px; */
+}
+/* 图片集 */
+.pics>ul>li{
+    float: left;
+}
+/* 设置图片大小 */
+.pics>ul>li img{
+    width: 1010px;
+    height: 420px;
+}
+/* 轮播图上的点 */
+#po{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 922px;
+    top: 390px;
+    background-color: rgb(255, 255, 255);
+    opacity:0.2;
+}
+#po .point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #0e0d0d;
+}
+#po .point:hover{
+    background-color: #ff6a00;
+}
+/* 4大块 */
+.four{
+    margin: 0 160px 0 150px;
+    height: 160px;
+    /* background-color: aqua; */
+    /* 防止页面伸缩 */
+    min-width: 1213px;
+}
+/* 第一块 */
+.four>li{
+    width: 300px;
+    height: 100%;
+    /* background-color: #0e0d0d; */
+    margin: 0 0px 0 25px;
+    float: right;
+}
+/* 最左侧6个 */
+#one{
+    width: 200px;
+    margin-left: 0px;
+    margin-right: 38px;
+}
+#six{
+    width: 200px;
+    height: 100%;
+}
+/* 图片设置 */
+.four li img{
+    width:100%;
+    height: 100%;
+}
+/* 超链接 */
+#one #six li a{
+    opacity: 0.4;
+    display: block;
+    padding: 10px 5px 5px 8px;
+    text-decoration: none;
+    /* color: rgb(20, 17, 17); */
+    color: #919597;
+}
+#one #six li a:hover{
+    opacity: 0.8;
+    
+}
+/* 每一小块 */
+#one #six li{
+    text-align: center;
+    width: 33.3%;
+    height: 50%;
+    background-color: #806051;
+    float: left;
+}
+/* 文字 */
+#one #six li i{
+    font-size: 5px;
+    color: wheat;
+}
+/* 标志 */
+#one #six li span{
+    font-size:20px;
+    background-color: bisque;
+}
+/* 大一块棕色 */
+.brown{
+    width: 1513px;
+    min-height: 1000px;
+    background-color: whitesmoke;
+}
+.zhong{
+    margin-left: 150px;
+    min-width: 1215px;
+    width:1215px;
+    min-height: 1000px;
+    /* background-color: aquamarine; */
+    /* 防止margin重叠 */
+    overflow: hidden;
+    /* 为子元素设置定位 */
+    position: relative;
+}
+/* pic big */
+.tu{
+    width: 1215px;
+    height: 150px;
+    background-color: #ff6a00;
+    margin: 20px 0 20px 0;
+}
+.tu img{
+    max-width: 100%;
+    height: 100%;
+}
+/* 标题 */
+#phoneh2{
+    color: #0e0d0d;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+    opacity: 0.8;
+    display: inline-block;
+}
+/* 610 手机展示 */
+.phoneShow{
+    height: 614px;
+    width: 1225px;
+    /* background-color: rgb(47, 51, 50); */
+}
+/* 每一小块 */
+.phoneShow ul>li:not(#big,#two){
+    width: 240px;
+    height: 300px;
+    background-color: yellow;
+    float: left;
+    margin-right: 10px;
+    /* 占据原先未知 */
+    position: relative;
+    border: 1px solid white;
+}
+#big{
+    width: 210px;
+    height: 614px;
+    float: left;
+    background-color: #88766d;
+    /* 占据原先未知 */
+    position: relative;
+    margin-right: 5px;
+}
+/* 特殊分兩塊的 */
+#two{
+    float: left;
+    width: 240px;
+    height: 300px;
+    /* margin-left: 5px; */
+    /* background-color: #ff6a00; */
+}
+#two div{
+    width: 240px;
+    height: 140px;
+    position: relative;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+/* tu */
+.phoneShow img{
+    width: 100%;
+    height: 100%;
+}
+/* 中间分隔线 */
+#white{
+    display: block;
+    width: 1020px;
+    height: 10px;
+    position: relative;
+    left: 210px;
+    top: 300px;
+    background-color: whitesmoke;
+}
+/* 点击 上升加阴影 */
+.phoneShow ul li:not(#two,#big):hover,#two div:hover,.tv #big div:hover,#big:not(.tv #big):hover{
+    top:-10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    z-index: 2;
+}
+/* 右侧的搜索提示 */
+#chakan{
+    position: absolute;
+    left: 1080px;
+    top: 170px;
+    color: #0e0d0d;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+    opacity: 0.6;
+}
+/* 查看更多》 */
+#chakan:hover{
+    color: orange;
+}
+/* h2标题 */
+#tihuan1,#tihuan2,#tihuan3,#tihuan4,#none{
+   display: block;
+   float: right;
+   margin: 20px 0 15px 0;
+   font-size: 25px;
+   font-family: 微软雅黑;
+   font-size: 25px;
+   color: #0e0d0d;
+   padding-bottom: 3px;
+}
+#tihuan2,#tihuan3,#tihuan4{
+    margin-right: 20px;
+}
+/* 文字 */
+#tihuan1:hover,#tihuan2:hover,#tihuan3:hover,#tihuan4:hover{
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+#none:hover{
+    color: orange;
+}
+/* 下劃綫 沒用了 */
+/* #line1,#line2{
+    display: none;
+    width: 50px;
+    height: 2px;
+    margin-top: 3px;
+    background-color: orange;
+} */
+/* #tihuan1:hover #line1,#tihuan2:hover #line2{
+    display: block;
+} */
+/* 特殊处理电视模块 */
+.tv #big div{
+    width: 210px;
+    height: 300px;
+    position: relative;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+#display{
+    display: none;
+}
+#video{
+    width: 100%;
+    height: 300px;
+    /* background-color: #ff6a00;   */
+}
+/* 视频 */
+#first{
+    width: 24%;
+    height: 90%;
+    background-color: white;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+#video li:not(#first){
+    width: 24%;
+    height: 90%;
+    float: right;
+    background-color: white;
+    margin-left: 15px;
+    text-align: center;
+    position: relative;
+}
+#video img{
+    width: 100%;
+    height: 60%;
+}
+/* 字体 */
+#video li i{
+    display: inline-block;
+    font-size: 14px;
+    color: #ff6a00;
+    margin-top: 30px;
+}
+/* 播放按钮 */
+#video span{
+    font-size: 30px !important;
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    color: aliceblue;
+}
+#video span:hover{
+    color: orange;
+}
+/* 结尾 */
+.bottom{
+    margin-left: 150px;
+    min-width: 1215px;
+    width:1215px;
+    min-height: 1000px;
+    /* background-color: aquamarine; */
+    /* 防止margin重叠 */
+    overflow: hidden;
+    /* 为子元素设置定位 */
+    position: relative;
+    /* background-color: rgb(112, 27, 27); */
+}
+.bottom>ul:first-child>li{
+    width: 20%;
+    /* height: 150px;background-color: antiquewhite; */
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+     
+}
+#firstli{
+    float:left; 
+}
+.bottom>ul:first-child>li:not(#firstli){
+    
+    float:right; 
+}
+/* 文字 */
+.bottom>ul:first-child>li a{
+    border-left: 1px solid rgb(133, 138, 131);
+    padding-left: 75px;
+    text-decoration: none;
+    font-size:20px;
+    /* opacity: 0.6; */
+    color: #474543;
+    font-family: '微软雅黑';
+}
+.bottom>ul:first-child>li a:hover,.rule>li a:hover{
+    color: orange;
+}
+#firstli a{
+    border-left:none;
+}
+/* 各种联系方式 */
+.rule>li{
+    float: left;
+    margin-right: 80px;
+    margin-top: 40px;
+    /* background-color: #bfa; */
+}
+/* 主要名字 */
+.rule>li span{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+/* 链接 */
+.rule>li a{
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.6;
+    color: #0e0d0d;
+    font-family: '微软雅黑';
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+/* 联系方式 */
+.phoneNumber{
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 1000px;
+    border: 1px solid white;
+    /* background-color: #a04921; */
+    padding-left: 30px;
+    border-left: 2px solid #9b9591;
+}
+/* 人工客服 */
+.phoneNumber i:not(.phoneNumber i:first-child){
+    display:inline-block;
+    color: orange;
+    font-size: 17px;
+    border: 2px solid rgb(224, 103, 4);
+    margin: 10px 20px;
+    padding: 5px;
+}
+.phoneNumber i:not(.phoneNumber i:first-child):hover{
+    background-color: orange;
+}
+/* 电话 */
+.phoneNumber i:first-child{
+    display: block;
+    color: orange;
+    font-size: 22px;
+    margin: 20px 20px;
+}
+.phoneNumber i a{
+    color: orange;
+    text-decoration: none;
+}
+.phoneNumber span{
+    display: block;
+    color: black;
+    font-size: 15px;
+    margin: 20px 20px;
+}
+/* 超链接 */
+.phoneNumber a:not(.phoneNumber i a){
+    text-decoration: none;
+    color: black;
+}
+/* 人工客服的点击 */
+.phoneNumber i:not(.phoneNumber i:first-child):hover a{
+    color: rgb(247, 243, 234);
+}
+/* 两个图标的点击 */
+.phoneNumber span:not(.phoneNumber span:first-child):hover a{
+    color: rgb(241, 169, 1);
+}
